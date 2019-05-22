@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500");
+:root {
+  font-size: 16px;
+  --accent: #be4577;
+  --bg: #575761;
+  --dot-size: 15px;
+  --text: #272727;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+body {
+  align-items: center;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+.container {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  color: var(--text);
+  font-weight: 300;
+  max-width: calc(420px + 2rem);
+  padding: 2rem;
+  z-index: 100;
+}
+p {
+  line-height: 1.6rem;
+}
+header,
+p {
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+a {
+  cursor: pointer;
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+a:hover {
+  color: var(--text);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.underline {
+  text-decoration: underline;
+}
+.contact {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.social-links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.social-links > a {
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 0;
+}
+.social-links > a:last-child {
+  padding-right: 0;
+}
+.button-link {
+  background-color: var(--accent);
+  border-radius: 3px;
+  color: #fff4e9;
+  padding: 0.5rem 1rem;
+}
+.button-link:hover {
+  background-color: var(--text);
+  color: white;
+}
+.button-link,
+.button-link:hover {
+  transition: 0.5s;
+}
+@media (max-width: 600px) {
+  .contact {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .cv {
+    margin-top: 2rem;
+  }
+}
+.dot,
+.star {
+  position: absolute;
+}
+.dot {
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+}
+.star::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: var(--dot-size) + 5px;
+  content: "\f005";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  display: inline-block;
+}
