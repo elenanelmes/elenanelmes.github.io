@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Kanit:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Kanit:wght@800&display=swap");
 :root {
   --font-base: 16px;
   --color-accent: #d95d39;
@@ -69,6 +69,7 @@ a:hover {
   max-width: fit-content;
 }
 .name .inner {
+  background: var(--color-bg);
   border: var(--border-base) solid var(--color-bg);
   border-radius: calc(var(--radius-base) / 2);
   margin: -1px;
@@ -125,13 +126,13 @@ a:hover {
 }
 .leaf--left .leaf--wrapper .leaf--tip {
   clip-path: circle(50% at 50% 50%);
-  height: 2.4rem;
-  left: 0.25px;
+  height: 2.25rem;
+  left: 0.2px;
   margin-bottom: -10px;
   position: absolute;
   top: -1.1rem;
-  transform: rotate(-5deg);
-  width: 2.08rem;
+  transform: rotate(-6deg);
+  width: 2.09375rem;
 }
 .leaf--left .leaf--wrapper .leaf--body {
   clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
@@ -140,6 +141,7 @@ a:hover {
 }
 .leaf--left::after {
   background: var(--color-bg);
+  border-radius: 2px;
   bottom: 0;
   content: "";
   height: 100%;
@@ -151,17 +153,17 @@ a:hover {
 .leaf--right {
   bottom: 0;
   position: absolute;
-  right: 7px;
+  right: 6.75px;
 }
 .leaf--right .leaf--wrapper .leaf--tip {
   clip-path: circle(50% at 50% 50%);
-  height: 2.4rem;
+  height: 2.38rem;
   margin-bottom: -10px;
   position: absolute;
-  right: 0;
-  top: -1.1rem;
-  transform: rotate(5deg);
-  width: 2.25rem;
+  right: 0.3px;
+  top: -1.03rem;
+  transform: rotate(4.5deg);
+  width: 2.235rem;
 }
 .leaf--right .leaf--wrapper .leaf--body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -170,6 +172,7 @@ a:hover {
 }
 .leaf--right::after {
   background: var(--color-bg);
+  border-radius: 2px;
   bottom: 0;
   content: "";
   height: 100%;
