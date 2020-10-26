@@ -27,13 +27,7 @@ body {
   width: 100%;
 }
 body {
-  align-items: center;
   background: var(--color-bg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  padding: var(--unit-base);
 }
 a {
   cursor: pointer;
@@ -50,7 +44,17 @@ a:hover {
   -o-transition: var(--transition-base);
 }
 .wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+.wrapper .inner {
+  margin: auto 0;
   max-width: 420px;
+  padding: calc(var(--unit-base) * 3) 0;
 }
 .name {
   border: calc(var(--border-base) + 1px) solid var(--color-accent);
