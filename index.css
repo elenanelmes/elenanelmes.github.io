@@ -54,7 +54,7 @@ a:hover {
 .wrapper .inner {
   margin: auto 0;
   max-width: 420px;
-  padding: calc(var(--unit-base) * 3) 0;
+  padding: calc(var(--unit-base) * 3) var(--unit-base);
 }
 .name {
   border: calc(var(--border-base) + 1px) solid var(--color-accent);
