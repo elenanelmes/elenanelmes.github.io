@@ -181,3 +181,41 @@ a:hover {
   transform: rotate(5.5deg);
   width: 2px;
 }
+
+/* Support for IE 10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .name {
+    display: table;
+  }
+  .name .inner {
+    display: table;
+  }
+  .plant {
+    display: none;
+    opacity: 0;
+  }
+  @media screen and (max-width: 300px) {
+    .name .inner {
+      width: 1px;
+    }
+  }
+}
+
+/* Support for Edge 12+ */
+@supports (-ms-accelerator: true) or (-ms-ime-align: auto) {
+  .name {
+    display: table;
+  }
+  .name .inner {
+    display: table;
+  }
+  .plant {
+    display: none;
+    opacity: 0;
+  }
+  @media screen and (max-width: 300px) {
+    .name .inner {
+      width: 1px;
+    }
+  }
+}
